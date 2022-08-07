@@ -1,38 +1,38 @@
 const name = "Abhishek"
 const mobile_no = 7054916134
-const pic = "image/hello.png"
+const pic = "hello.png"
 
 const badges = [{
     badge_name: "Gate Score Card",
     summary: "ECE 2021",
-    badge_image: "certificates/Gate result.jpg"
+    badge_image: "Gate result.jpg"
 }, {
     badge_name: "Exposis Internship",
     summary: "",
-    badge_image: "certificates/Exposis internship.jpg"
+    badge_image: "Exposis internship.jpg"
 }, {
     badge_name: "HTML Complition",
     summary: "",
-    badge_image: "certificates/HTML certificate.jpg"
+    badge_image: "HTML certificate.jpg"
 }, {
     badge_name: "Visa virtual",
     summary: "",
-    badge_image: "certificates/Visa forage.jpg"
+    badge_image: "Visa forage.jpg"
 }, {
     badge_name: "World education fair",
     summary: "",
-    badge_image: "certificates/World education fair.jpg"
+    badge_image: "World education fair.jpg"
 }]
 
 
 const Projects = [{
     project_name: "Artificial eye for a blind man",
-    project_image: "certificates/artificial_eye.jpg",
+    project_image: "artificial_eye.jpg",
     project_detail: "An ardiuno,altrasonic sensor and vibrator based project.Which sences the obstracle and warns the user"
 }, {
     project_name: "Portfolio web-page",
-    project_image: "certificates/port.jpg",
-    project_detail: "A web page that describe about me"
+    project_image: "port.jpg",
+    project_detail: "A web page that describe about me. Based on pure javaScript and CSS based  "
 
 }]
 
@@ -69,7 +69,7 @@ const main_nav_bar = (name, nav_elements) => {
     const el2 = document.createElement("div")
     el2.setAttribute("class", "chat")
     el2.innerHTML = `  <a href="https://api.whatsapp.com/send?phone=917054916134" target="_blank">
-    <img width="70px" src="logo/whatsapp.png"></a>`
+    <img width="70px" src=" whatsapp.png"></a>`
     document.querySelector(".main-nav-bar").appendChild(el2);
     load_home()
 }

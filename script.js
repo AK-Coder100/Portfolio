@@ -13,7 +13,7 @@ const badges = [{
 }, {
     badge_name: "HTML Complition",
     summary: "",
-    badge_image: "HTML certificate.jpg"
+    badge_image: "HTML Certificate.jpg"
 }, {
     badge_name: "Visa virtual",
     summary: "",

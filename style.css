@@ -570,7 +570,7 @@ svg {
     margin: 15px;
 }
 
-@media (width<940px) {
+@media only screen and (width:992px) {
     span {
         font-size: 24px;
     }

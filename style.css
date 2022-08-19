@@ -116,6 +116,40 @@ body {
     width: -webkit-fill-available;
 }
 
+#nav-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    background-color: #f7f7f7;
+    z-index: 100;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.nav-logo {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-logo span {
+    color: red;
+}
+
+#nav-link {
+    margin-top: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+    margin: 0px 24px;
+}
+
 .heading {
     text-align: center;
 }
@@ -496,6 +530,7 @@ svg {
 }
 
 @media (width<905px) {
+@media only screen and (max-width:992px) {
     span {
         font-size: 24px;
     }
@@ -531,6 +566,7 @@ svg {
         margin: 15px;
     }
 }
+
 
 @media (width<480px) {
     h2 {

@@ -23,11 +23,45 @@ body {
     background-size: cover;
 }
 
+#nav-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    background-color: #f7f7f7;
+    z-index: 100;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.nav-logo {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-logo span {
+    color: red;
+}
+
+#nav-link {
+    margin-top: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+    margin: 0px 24px;
+}
+
 #main-container {
     display: flex;
     padding-top: 35vh;
     justify-content: space-evenly;
-    padding-bottom: 175px;
+    padding-bottom: 85px;
 }
 
 .welcome {
@@ -58,44 +92,6 @@ body {
     transform: rotateZ(351deg);
     color: black;
     text-shadow: 5px 4px 5px darkblue;
-}
-
-.resume {
-    position: absolute;
-    bottom: -214px;
-    right: 10px;
-    font-family: auto;
-    border: solid;
-    border-radius: 10px;
-    font-size: 0.4em;
-    transform: rotateZ(8deg);
-    background-color: tomato;
-}
-
-.resume::before {
-    content: "";
-    animation: tex 3s linear infinite;
-}
-
-@keyframes tex {
-    0% {
-        content: "R"
-    }
-    20% {
-        content: "RE"
-    }
-    40% {
-        content: "RES"
-    }
-    60% {
-        content: "RESU"
-    }
-    80% {
-        content: "RESUM"
-    }
-    100% {
-        content: "RESUME"
-    }
 }
 
 .profile-container {
@@ -167,7 +163,6 @@ body {
 /* skill */
 
 #skill-main-container {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     background: #2e2e2e;
@@ -250,18 +245,16 @@ body {
     height: 100%;
     border-radius: 10px;
     background-color: #fff;
-    /* animation: fill-bar 4s ease-in-out 2s infinite; */
 }
 
 @media screen {
     .skills .percent .progress {
-        animation: fill-bar 4s ease-in-out 2s forwards;
+        animation: fill-bar 4s ease-in-out forwards;
     }
-}
-
-@keyframes fill-bar {
-    0% {
-        width: 0%;
+    @keyframes fill-bar {
+        0% {
+            width: 0%;
+        }
     }
 }
 
@@ -280,28 +273,6 @@ body {
 .skills:nth-child(5) .progress {
     background: linear-gradient(45deg, #a95bdd, #ff00ca);
 }
-
-
-/* 
-@media (width<900px){
-    .main-container{
-        display: grid;
-        text-align: -webkit-center;
-    }
-    .welcome{
-        order: 2;
-    }
-    #profile-photo{
-        order: 1;
-         height: 330px;
-        width: 330px;
-        z-index: -10;
-        max-width: 40%;
-        overflow: hidden;
-        border: double;
-        transform: rotateZ(45deg);
-    }
-} */
 
 
 /* kushal */
@@ -447,9 +418,9 @@ body {
 }
 
 .project-container .project-card .project-content:hover {
+    padding: 20px;
     transform: translateY(0px);
     opacity: 1;
-    padding: 20px;
     background-color: rgb(82 161 231)
 }
 
@@ -465,18 +436,6 @@ body {
     color: snow;
     border-radius: 10px;
 }
-
-
-/* .project-container .project-card .project-content h2{
-    position: absolute;
-    top: -80px;
-    right: 30px;
-    font-size: 8em;
-    color: rgba(0,0,0,0.05);
-    pointer-events: none;
-
-
-} */
 
 .project-container .project-card .project-content h2 {
     font-size: 1em;
@@ -570,6 +529,7 @@ svg {
     margin: 15px;
 }
 
+@media (width<905px) {
 @media only screen and (max-width:992px) {
     span {
         font-size: 24px;
@@ -577,7 +537,7 @@ svg {
     #main-container {
         display: grid;
         justify-items: center;
-        padding-top: 28vh;
+        padding-top: 6rem;
     }
     .welcome {
         order: 2;
@@ -587,9 +547,15 @@ svg {
     }
     #profile-photo {
         order: 1;
+        height: 297px;
+        width: 200px;
+        transform: translateY(-17px);
     }
     #nav-link {
         display: none;
+    }
+    .nav-logo {
+        padding-left: 65px;
     }
     #nav-container::before {
         content: "";
@@ -598,5 +564,39 @@ svg {
         width: 50px;
         height: 50px;
         margin: 15px;
+    }
+}
+
+
+@media (width<480px) {
+    h2 {
+        font-size: 2em;
+    }
+    span {
+        font-size: 14px;
+    }
+    .nav-logo span {
+        font-size: 28px;
+    }
+    #profile-photo {
+        height: 262px;
+        width: 188px;
+    }
+    .nam {
+        font-size: 25px;
+    }
+    .skills {
+        padding: 10px 1px 2px;
+    }
+    .skills .name {
+        width: 83px;
+    }
+    .skills .percent {
+        height: 11px;
+    }
+    svg {
+        width: 34px;
+        height: 34px;
+        margin: 7px;
     }
 }

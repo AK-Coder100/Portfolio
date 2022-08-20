@@ -65,7 +65,7 @@ body {
 }
 
 .welcome {
-    margin: 0 50px;
+    margin-right: 26px;
     display: flex;
     font-size: xx-large;
     font-weight: bolder;
@@ -529,7 +529,6 @@ svg {
     margin: 15px;
 }
 
-
 @media only screen and (max-width:992px) {
     span {
         font-size: 24px;
@@ -567,10 +566,10 @@ svg {
     }
 }
 
-
-@media (width<480px) {
+@media (max-width:480px) {
     h2 {
         font-size: 2em;
+        color: springgreen;
     }
     span {
         font-size: 14px;
@@ -598,5 +597,14 @@ svg {
         width: 34px;
         height: 34px;
         margin: 7px;
+    }
+}
+
+@media (max-width:300px) {
+    .skills .value {
+        display: none;
+    }
+    .skills .percent {
+        width: calc(100% - 85px)
     }
 }

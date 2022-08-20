@@ -571,6 +571,7 @@ svg {
 @media (width<480px) {
     h2 {
         font-size: 2em;
+        color: springgreen;
     }
     span {
         font-size: 14px;

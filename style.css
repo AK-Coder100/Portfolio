@@ -601,3 +601,11 @@ svg {
         margin: 7px;
     }
 }
+@media (max-width:300px) {
+    .skills .value {
+        display: none;
+    }
+    .skills .percent {
+        width: calc(100% - 85px)
+    }
+}

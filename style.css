@@ -16,6 +16,7 @@ h2::first-letter {
 
 body {
     background-color: whitesmoke;
+    scroll-behavior: smooth !important;
 }
 
 .main-bg {
@@ -114,6 +115,7 @@ body {
 
 #pro-img {
     width: -webkit-fill-available;
+    width: 100%;
 }
 
 #nav-container {
@@ -220,6 +222,7 @@ body {
     color: #fff;
     margin-top: -2px;
     text-transform: uppercase;
+    font-size: initial;
 }
 
 .skills .value {
@@ -292,7 +295,8 @@ body {
 
 .card img {
     max-height: 260px;
-    width: 100%
+    width: 100%;
+    object-fit: contain;
 }
 
 .card:focus-within~.card,
@@ -345,7 +349,8 @@ body {
         margin-left: -44vw
     }
     .card img {
-        max-height: 460px
+        min-height: 60dvh;
+        max-height: 60dvh;
     }
 }
 
@@ -410,14 +415,14 @@ body {
 }
 
 .project-container .project-card .project-content {
-    padding: 200px;
+    padding: 200px 20px;
     text-align: center;
     transform: translateY(100px);
     opacity: 0;
     transition: 0.5s;
 }
 
-.project-container .project-card .project-content:hover {
+.project-container .project-card:hover .project-content {
     padding: 20px;
     transform: translateY(0px);
     opacity: 1;
@@ -451,6 +456,8 @@ body {
     text-align: -webkit-center;
     padding: 10px;
     background: linear-gradient(238deg, rgb(117 172 115 / 80%), transparent);
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -466,6 +473,7 @@ body {
     overflow: hidden;
     padding: 10px;
     text-align: start;
+    flex-grow: 1;
 }
 
 #contect-form input {
@@ -607,3 +615,4 @@ svg {
         width: calc(100% - 85px)
     }
 
+}
